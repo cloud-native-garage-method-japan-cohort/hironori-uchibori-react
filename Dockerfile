@@ -1,4 +1,4 @@
-FROM node:20
+FROM node:20.15.1
 WORKDIR /reactapp
 ENV PATH /reactapp/node_modules/.bin:$PATH
 COPY package.json ./
