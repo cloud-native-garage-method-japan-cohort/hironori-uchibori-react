@@ -5,6 +5,5 @@ COPY package.json ./
 COPY package-lock.json ./
 RUN npm i
 COPY . ./
-EXPOSE 3000
-CMD ["npm", "run", "start"]
-# CMD ["npm", "run", "start", "--", "--host"]
+EXPOSE 5173
+CMD ["npm", "run", "dev", "--", "--host"]
